@@ -73,4 +73,4 @@ FROM film
 GROUP BY rating
 ORDER BY COUNT(film_id) DESC;
 
--- Answer: There are 5 rating categories and PG-13 had the most movie counts in total
+-- Answer: There are 5 rating categories and PG-13 had the most movie counts with 223 in total
