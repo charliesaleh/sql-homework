@@ -18,7 +18,7 @@ FROM inventory
 GROUP BY film_id
 ORDER BY COUNT(*) DESC;
 
--- Answer: I got a lot of flim counts. I don't know how to do it, stayed up all night trynna solve it
+-- Answer: I got a lot of flim counts of 8s. I don't know how to do it, stayed up all night trynna solve it
 
 -- 4. How many customers have the last name ‘William’?
 SELECT first_name, last_name
