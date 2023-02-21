@@ -13,7 +13,10 @@ WHERE amount BETWEEN 3.99 AND 5.99;
 -- Answer: 4794 payments were made
 
 --- 3. What film does the store have the most of? (search in inventory table)
-
+SELECT film_id, COUNT(*)
+FROM inventory
+GROUP BY film_id
+ORDER BY COUNT(*) DESC;
 
 -- Answer: I don't know. Stayed up all night trynna solve it
 
