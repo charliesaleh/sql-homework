@@ -61,13 +61,19 @@ WHERE store_id = 1 AND last_name LIKE '%es';
 
 -- 9. How many payment amounts (4.99, 5.99, etc.) had a number of rentals above 250 for customers
 -- with ids between 380 and 430? (use group by and having > 250)
-SELECT amount, customer_id, COUNT(rental_id)
-FROM payment
-WHERE customer_id BETWEEN 380 AND 430
-GROUP BY amount, customer_id;
-HAVING COUNT(rental_id) > 250;
+-- SELECT amount, customer_id, COUNT(rental_id)
+-- FROM payment
+-- WHERE customer_id BETWEEN 380 AND 430            ----MY OLD ANSWER
+-- GROUP BY amount, customer_id;
+-- HAVING COUNT(rental_id) > 250;
 
--- Answer: None?
+SELECT COUNT(amount), amount
+FROM payment
+WHERE customer_id BETWEEN 380 and 430       -- Watched you do it with SJ it made sense
+GROUP BY amount
+HAVING COUNT(amount) > 250;
+
+-- Answer: There are 3 payment amounts (None?----OLD ANSWER)
 
 -- 10. Within the film table, how many rating categories are there? And what rating has the most
 -- movies total?
