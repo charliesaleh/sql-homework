@@ -41,7 +41,7 @@ FROM customer;
 SELECT COUNT(DISTINCT last_name)
 FROM customer;
 
--- Answer: There are a whooping 591 distinct first names. (599 distinct last names. Most Likely wrong
+-- Answer: There are 591 distinct first names. (599 distinct last names. Most Likely wrong
 -- but adding it anyway)
 
 -- 7. What film has the most actors in it? (use film_actor table and get film_id)
